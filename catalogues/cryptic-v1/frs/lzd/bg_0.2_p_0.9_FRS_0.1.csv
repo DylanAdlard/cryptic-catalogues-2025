@@ -1,0 +1,37 @@
+,GENBANK_REFERENCE,CATALOGUE_NAME,CATALOGUE_VERSION,CATALOGUE_GRAMMAR,PREDICTION_VALUES,DRUG,MUTATION,PREDICTION,SOURCE,EVIDENCE,OTHER
+0,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@V185I,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.14463859126760936], ""p_value"": 0.05480482918236159, ""contingency"": [[0, 16], [97, 12747]]}",{}
+1,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@A31T,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.172266783508845], ""p_value"": 0.08501090467839999, ""contingency"": [[0, 13], [97, 12747]]}",{}
+2,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@T115A,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.1141312562327272], ""p_value"": 0.013295591221538838, ""contingency"": [[0, 21], [97, 12747]]}",{}
+3,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@V97I,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.15280770461014012], ""p_value"": 0.05324317907353598, ""contingency"": [[0, 15], [97, 12747]]}",{}
+34,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@*=,S,{},"{""default_rule"": ""True""}",{}
+8,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@C154R,R,{},"{""proportion"": 0.6511627906976745, ""confidence"": [0.563189292096733, 0.7299152759785965], ""p_value"": 1.318056526966755e-19, ""contingency"": [[56, 30], [97, 12812]]}",{}
+4,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@A155G,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+5,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@R44L,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+6,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@51_del_cga,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+7,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@S89A,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+9,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@g-16c,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+10,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@K61T,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+11,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@T93A,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.4741955741575127], ""p_value"": 1.0, ""contingency"": [[0, 3], [97, 12812]]}",{}
+12,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@R38C,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.5749693909936535], ""p_value"": 1.0, ""contingency"": [[0, 2], [97, 12812]]}",{}
+13,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@I105V,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+14,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@R159W,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+15,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@R79L,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+16,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@A103S,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+17,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@D173G,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+18,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@G120S,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.40347862520270455], ""p_value"": 1.0, ""contingency"": [[0, 4], [97, 12812]]}",{}
+19,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@-13_ins_t,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+20,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@45_ins_gtattcgac,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+21,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@A72T,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+22,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@S138R,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+23,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@D18N,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.40347862520270455], ""p_value"": 1.0, ""contingency"": [[0, 4], [97, 12812]]}",{}
+24,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@R214Q,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+25,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@G12S,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+26,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@H183Y,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.5749693909936535], ""p_value"": 1.0, ""contingency"": [[0, 2], [97, 12812]]}",{}
+27,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@462_ins_gcc,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+28,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@G168R,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+29,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@G131S,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [97, 12812]]}",{}
+30,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@*?,U,{},"{""default_rule"": ""True""}",{}
+31,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@-*?,U,{},"{""default_rule"": ""True""}",{}
+32,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@*_indel,U,{},"{""default_rule"": ""True""}",{}
+33,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@-*_indel,U,{},"{""default_rule"": ""True""}",{}
+35,NC00962.3,LZD-0.2-0.9-0.1,0.0,GARC1,RUS,LZD,rplC@del_0.0,U,{},"{""default_rule"": ""True""}",{}

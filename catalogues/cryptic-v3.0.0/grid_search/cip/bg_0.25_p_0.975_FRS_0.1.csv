@@ -1,0 +1,36 @@
+,GENBANK_REFERENCE,CATALOGUE_NAME,CATALOGUE_VERSION,CATALOGUE_GRAMMAR,PREDICTION_VALUES,DRUG,MUTATION,PREDICTION,SOURCE,EVIDENCE,OTHER
+0,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@E21Q,S,{},"{""proportion"": 0.034482758620689655, ""confidence"": [0.006113214292762649, 0.17175521879320288], ""p_value"": 0.004324095825715718, ""contingency"": [[1, 28], [0, 0]]}",{}
+1,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@S95T,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [1, 28]]}",{}
+2,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@G668D,S,{},"{""proportion"": 0.04424778761061947, ""confidence"": [0.02699535862209644, 0.07171341171478743], ""p_value"": 2.628490632545414e-24, ""contingency"": [[15, 324], [1, 29]]}",{}
+3,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@A384V,S,{},"{""proportion"": 0.0, ""confidence"": [-6.4146077049798385e-18, 0.07555760416399632], ""p_value"": 1.862714656219358e-06, ""contingency"": [[0, 47], [16, 353]]}",{}
+4,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@A463S,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.20388330103584862], ""p_value"": 0.030663299374282364, ""contingency"": [[0, 15], [16, 353]]}",{}
+5,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@T5A,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 353]]}",{}
+6,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@S680C,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 353]]}",{}
+7,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@T80A,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.4898908364545973], ""p_value"": 0.578125, ""contingency"": [[0, 4], [16, 353]]}",{}
+8,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@R607H,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 353]]}",{}
+9,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@S250A,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 353]]}",{}
+10,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@R252L,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 353]]}",{}
+11,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@A322E,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 353]]}",{}
+12,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@L296P,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 425]]}",{}
+13,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@M438I,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 425]]}",{}
+14,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@E605K,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 425]]}",{}
+15,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@A456G,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 425]]}",{}
+16,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@A90G,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 425]]}",{}
+17,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@V663A,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [16, 425]]}",{}
+29,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@*=,S,{},"{""default_rule"": ""True""}",{}
+18,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@D94G,R,{},"{""proportion"": 0.84, ""confidence"": [0.6534637839282114, 0.9359654854332357], ""p_value"": 9.676934809021986e-10, ""contingency"": [[21, 4], [16, 431]]}",{}
+21,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@S91P,R,{},"{""proportion"": 0.8, ""confidence"": [0.4901624715366418, 0.9433178485456247], ""p_value"": 0.000415802001953125, ""contingency"": [[8, 2], [16, 431]]}",{}
+23,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@A90V,R,{},"{""proportion"": 0.875, ""confidence"": [0.5291118177871466, 0.9775825085499433], ""p_value"": 0.0003814697265625, ""contingency"": [[7, 1], [16, 431]]}",{}
+25,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@D94A,R,{},"{""proportion"": 0.8, ""confidence"": [0.37553462976252533, 0.9637758913675698], ""p_value"": 0.015625, ""contingency"": [[4, 1], [16, 431]]}",{}
+19,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@A74S,U,{},"{""proportion"": 1.0, ""confidence"": [0.3423802275066531, 1.0], ""p_value"": 0.0625, ""contingency"": [[2, 0], [16, 431]]}",{}
+20,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@G247S,U,{},"{""proportion"": 0.14285714285714285, ""confidence"": [0.04009392127146496, 0.3994137949697036], ""p_value"": 0.5395930223166943, ""contingency"": [[2, 12], [16, 431]]}",{}
+22,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@D94Y,U,{},"{""proportion"": 1.0, ""confidence"": [0.3423802275066531, 1.0], ""p_value"": 0.0625, ""contingency"": [[2, 0], [16, 431]]}",{}
+24,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@c-34t,U,{},"{""proportion"": 0.07142857142857142, ""confidence"": [0.012722215247890944, 0.31468704424151117], ""p_value"": 0.21263734251260757, ""contingency"": [[1, 13], [16, 431]]}",{}
+26,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@D94H,U,{},"{""proportion"": 0.5, ""confidence"": [0.09453120573423071, 0.9054687942657693], ""p_value"": 0.4375, ""contingency"": [[1, 1], [16, 431]]}",{}
+27,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@D94N,U,{},"{""proportion"": 1.0, ""confidence"": [0.20654931437723742, 1.0], ""p_value"": 0.25, ""contingency"": [[1, 0], [16, 431]]}",{}
+28,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@G88A,U,{},"{""proportion"": 1.0, ""confidence"": [0.20654931437723742, 1.0], ""p_value"": 0.25, ""contingency"": [[1, 0], [16, 431]]}",{}
+30,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
+31,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@*_indel,U,{},"{""default_rule"": ""True""}",{}
+32,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@-*?,U,{},"{""default_rule"": ""True""}",{}
+33,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@*?,U,{},"{""default_rule"": ""True""}",{}
+34,NC00962.3,CIP-0.25-0.975,0.0,GARC1,RUS,CIP,gyrA@del_0.0,U,{},"{""default_rule"": ""True""}",{}

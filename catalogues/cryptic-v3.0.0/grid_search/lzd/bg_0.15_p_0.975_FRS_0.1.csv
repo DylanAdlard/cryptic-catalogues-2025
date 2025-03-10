@@ -1,0 +1,28 @@
+,GENBANK_REFERENCE,CATALOGUE_NAME,CATALOGUE_VERSION,CATALOGUE_GRAMMAR,PREDICTION_VALUES,DRUG,MUTATION,PREDICTION,SOURCE,EVIDENCE,OTHER
+0,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@T115A,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.16112515805281938], ""p_value"": 0.06069463194135948, ""contingency"": [[0, 20], [65, 8346]]}",{}
+1,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@R38C,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.6576197724933469], ""p_value"": 1.0, ""contingency"": [[0, 2], [65, 8346]]}",{}
+2,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@45_ins_gtattcgac,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+3,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@A31T,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.2588329669680317], ""p_value"": 0.3885312618123437, ""contingency"": [[0, 11], [65, 8346]]}",{}
+4,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@I105V,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+5,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@V97I,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.20388330103584862], ""p_value"": 0.14905960583831152, ""contingency"": [[0, 15], [65, 8346]]}",{}
+6,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@V185I,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.1936076805344365], ""p_value"": 0.153302384603007, ""contingency"": [[0, 16], [65, 8346]]}",{}
+7,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@T41M,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+8,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@R44L,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+9,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@51_del_cga,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+10,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@T93A,S,{},"{""proportion"": 0.0, ""confidence"": [4.8683609171202235e-17, 0.5614970317550455], ""p_value"": 1.0, ""contingency"": [[0, 3], [65, 8346]]}",{}
+11,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@R214Q,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+12,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@D18N,S,{},"{""proportion"": 0.0, ""confidence"": [4.8683609171202235e-17, 0.5614970317550455], ""p_value"": 1.0, ""contingency"": [[0, 3], [65, 8346]]}",{}
+13,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@-13_ins_t,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+14,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@S138R,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+15,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@A72T,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+16,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@G120S,S,{},"{""proportion"": 0.0, ""confidence"": [4.8683609171202235e-17, 0.5614970317550455], ""p_value"": 1.0, ""contingency"": [[0, 3], [65, 8346]]}",{}
+17,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@H183Y,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.6576197724933469], ""p_value"": 1.0, ""contingency"": [[0, 2], [65, 8346]]}",{}
+18,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@G12S,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8346]]}",{}
+19,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@S89A,S,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [65, 8431]]}",{}
+25,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@*=,S,{},"{""default_rule"": ""True""}",{}
+20,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@C154R,R,{},"{""proportion"": 0.8333333333333334, ""confidence"": [0.6643564949358397, 0.9266345762815145], ""p_value"": 1.652276877891181e-16, ""contingency"": [[25, 5], [65, 8432]]}",{}
+21,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@*?,U,{},"{""default_rule"": ""True""}",{}
+22,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@-*?,U,{},"{""default_rule"": ""True""}",{}
+23,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@*_indel,U,{},"{""default_rule"": ""True""}",{}
+24,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@-*_indel,U,{},"{""default_rule"": ""True""}",{}
+26,NC00962.3,LZD-0.15-0.975,0.0,GARC1,RUS,LZD,rplC@del_0.0,U,{},"{""default_rule"": ""True""}",{}

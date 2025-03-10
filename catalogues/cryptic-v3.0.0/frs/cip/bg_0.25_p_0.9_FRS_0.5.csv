@@ -1,0 +1,12 @@
+,GENBANK_REFERENCE,CATALOGUE_NAME,CATALOGUE_VERSION,CATALOGUE_GRAMMAR,PREDICTION_VALUES,DRUG,MUTATION,PREDICTION,SOURCE,EVIDENCE,OTHER
+0,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@E21Q,S,{},"{""proportion"": 0.05405405405405406, ""confidence"": [0.018051747705088994, 0.1508300473986063], ""p_value"": 0.0036787937922342145, ""contingency"": [[2, 35], [0, 3]]}",{}
+5,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@*=,S,{},"{""default_rule"": ""True""}",{}
+1,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@A74S,R,{},"{""proportion"": 1.0, ""confidence"": [0.4250306090063464, 1.0], ""p_value"": 0.0625, ""contingency"": [[2, 0], [2, 38]]}",{}
+2,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@D94A,R,{},"{""proportion"": 1.0, ""confidence"": [0.4250306090063464, 1.0], ""p_value"": 0.0625, ""contingency"": [[2, 0], [2, 38]]}",{}
+3,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@R480C,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [2, 38]]}",{}
+4,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@S95T,U,{},"{""proportion"": 0.0, ""confidence"": [0.0, 0.7301340512159458], ""p_value"": 1.0, ""contingency"": [[0, 1], [2, 38]]}",{}
+6,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
+7,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@*_indel,U,{},"{""default_rule"": ""True""}",{}
+8,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@-*?,U,{},"{""default_rule"": ""True""}",{}
+9,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@*?,U,{},"{""default_rule"": ""True""}",{}
+10,NC00962.3,CIP-0.25-0.9-0.5,0.0,GARC1,RUS,CIP,gyrA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
