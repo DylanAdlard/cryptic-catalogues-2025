@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/training/results/WHOv2/LEV/WHOv2.0_LEV_FRS1.00_predictions.csv.
-Catalogue coverage of isolates: 0.931720725673447
-Sensitivity: 0.7352564102564103
-Specificity: 0.9736765982065375

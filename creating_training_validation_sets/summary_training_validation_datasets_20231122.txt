@@ -1,5 +1,0 @@
-Training data: 25033 samples, file = training_data_20240125.tsv (older version:training_data_20231122.tsv)
-Validation data: 8914 samples, file = validation_set_20231110.pass.tsv
-Training data generated from CRyPTIC data (CRyPTIC_reuse_table_20231107.csv) and mykrobe data (mykrobe.20231121.tsv). 501 samples removed due to duplication between the sets.
-131 samples removed from the resulting training data as they are part of the validation set
-Added 20240125: Phenotype table in long format for running with catologue builder code (training_data_phenotypes_20240125.tsv). Wide table was edited to include phenotype quality metrics (training_data_20240125.tsv)

@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/training/results/WHOv2/LZD/WHOv2.0_LZD_FRS0.60_predictions.csv.
-Catalogue coverage of isolates: 0.25862068965517243
-Sensitivity: 1.0
-Specificity: 0.0

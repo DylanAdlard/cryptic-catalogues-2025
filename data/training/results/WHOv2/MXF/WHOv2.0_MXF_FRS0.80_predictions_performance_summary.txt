@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/training/results/WHOv2/MXF/WHOv2.0_MXF_FRS0.80_predictions.csv.
-Catalogue coverage of isolates: 0.9284343605373067
-Sensitivity: 0.8770370370370371
-Specificity: 0.9380363636363637

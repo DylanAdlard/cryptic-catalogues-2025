@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/training/results/WHOv2/INH/WHOv2.0_INH_FRS0.80_predictions.csv.
-Catalogue coverage of isolates: 0.9469760808971284
-Sensitivity: 0.9712460063897763
-Specificity: 0.9782104775150672

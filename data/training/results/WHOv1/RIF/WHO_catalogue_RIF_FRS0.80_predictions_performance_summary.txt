@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/results/RIF/WHO_catalogue_RIF_FRS0.80_predictions.csv.
-Catalogue coverage of isolates: 0.9597029702970297
-Sensitivity: 0.9958419958419958
-Specificity: 0.8597499155119973

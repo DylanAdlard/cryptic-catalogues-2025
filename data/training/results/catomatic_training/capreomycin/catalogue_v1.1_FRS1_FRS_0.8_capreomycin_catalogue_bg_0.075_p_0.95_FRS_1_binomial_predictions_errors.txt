@@ -1,8 +1,0 @@
-sample:<built-in function id>	mut:tlyA@309_ins_g	note:Cannot find mut in catalogue
-sample:<built-in function id>	mut:tlyA@C86G	note:Cannot find mut in catalogue
-sample:<built-in function id>	mut:rrs@t460c	note:Cannot find mut in catalogue
-sample:<built-in function id>	mut:rrs@g319a	note:Cannot find mut in catalogue
-sample:<built-in function id>	mut:tlyA@G188E	note:Cannot find mut in catalogue
-sample:<built-in function id>	mut:rrs@t868c	note:Cannot find mut in catalogue
-sample:<built-in function id>	mut:rrs@c871t	note:Cannot find mut in catalogue
-sample:<built-in function id>	mut:rrs@a1449g	note:Cannot find mut in catalogue

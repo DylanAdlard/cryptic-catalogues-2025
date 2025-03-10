@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/training/results/AMI/WHO_catalogue_AMI_FRS1.00_predictions.csv.
-Catalogue coverage of isolates: 0.7945563012677107
-Sensitivity: 0.9617563739376771
-Specificity: 0.8933333333333333

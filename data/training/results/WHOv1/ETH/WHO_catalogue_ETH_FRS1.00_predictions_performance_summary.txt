@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/results/ETH/WHO_catalogue_ETH_FRS1.00_predictions.csv.
-Catalogue coverage of isolates: 0.5682113469034213
-Sensitivity: 1.0
-Specificity: 0.0

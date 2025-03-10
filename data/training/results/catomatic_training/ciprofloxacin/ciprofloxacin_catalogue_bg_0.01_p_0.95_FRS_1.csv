@@ -1,8 +1,0 @@
-,GENBANK_REFERENCE,CATALOGUE_NAME,CATALOGUE_VERSION,CATALOGUE_GRAMMAR,PREDICTION_VALUES,DRUG,MUTATION,PREDICTION,SOURCE,EVIDENCE,OTHER
-6,NC00962.3,catomatic_test,1.1,GARC1,RUS,ciprofloxacin,gyrA@*=,S,{},"{""default_rule"": ""True""}",{}
-0,NC00962.3,catomatic_test,1.1,GARC1,RUS,ciprofloxacin,gyrA@E21Q,R,{},"[{""proportion"": 0.11764705882352941, ""confidence"": [0.04671446664882335, 0.2662084277037183], ""p_value"": 0.00036489143304660427, ""contingency"": [[4, 30], [0, 0]]}]",{}
-1,NC00962.3,catomatic_test,1.1,GARC1,RUS,ciprofloxacin,gyrA@G668D,R,{},"[{""proportion"": 1.0, ""confidence"": [0.20654931437723742, 1.0], ""p_value"": 0.01, ""contingency"": [[1, 0], [0, 0]]}]",{}
-2,NC00962.3,catomatic_test,1.1,GARC1,RUS,ciprofloxacin,gyrA@*?,U,{},"{""default_rule"": ""True""}",{}
-3,NC00962.3,catomatic_test,1.1,GARC1,RUS,ciprofloxacin,gyrA@-*?,U,{},"{""default_rule"": ""True""}",{}
-4,NC00962.3,catomatic_test,1.1,GARC1,RUS,ciprofloxacin,gyrA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-5,NC00962.3,catomatic_test,1.1,GARC1,RUS,ciprofloxacin,gyrA@-*_indel,U,{},"{""default_rule"": ""True""}",{}

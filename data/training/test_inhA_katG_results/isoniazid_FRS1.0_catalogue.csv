@@ -1,9 +1,0 @@
-,GENBANK_REFERENCE,CATALOGUE_NAME,CATALOGUE_VERSION,CATALOGUE_GRAMMAR,PREDICTION_VALUES,DRUG,MUTATION,PREDICTION,SOURCE,EVIDENCE,OTHER
-0,NC00962.3,isoniazid_FRS1.0_catalogue,1.1,GARC1,RS,isoniazid,katG@R463L,S,{},"{""solo_R"": 0, ""solo_S"": 29, ""background_R"": 0, ""background_S"": 0, ""p_value"": 1.0}",{}
-1,NC00962.3,isoniazid_FRS1.0_catalogue,1.1,GARC1,RS,isoniazid,inhA@Q35R,S,{},"{""solo_R"": 0, ""solo_S"": 6, ""background_R"": 0, ""background_S"": 0, ""p_value"": 1.0}",{}
-2,NC00962.3,isoniazid_FRS1.0_catalogue,1.1,GARC1,RS,isoniazid,inhA@K118E,S,{},"{""solo_R"": 0, ""solo_S"": 1, ""background_R"": 0, ""background_S"": 0, ""p_value"": 1.0}",{}
-3,NC00962.3,isoniazid_FRS1.0_catalogue,1.1,GARC1,RS,isoniazid,inhA@I228V,S,{},"{""solo_R"": 0, ""solo_S"": 2, ""background_R"": 0, ""background_S"": 0, ""p_value"": 1.0}",{}
-4,NC00962.3,isoniazid_FRS1.0_catalogue,1.1,GARC1,RS,isoniazid,inhA@T2A,S,{},"{""solo_R"": 0, ""solo_S"": 1, ""background_R"": 0, ""background_S"": 0, ""p_value"": 1.0}",{}
-5,NC00962.3,isoniazid_FRS1.0_catalogue,1.1,GARC1,RS,isoniazid,inhA@S94A,R,{},"{""solo_R"": 3, ""solo_S"": 0, ""background_R"": 0, ""background_S"": 0, ""p_value"": 1.0}",{}
-6,NC00962.3,isoniazid_FRS1.0_catalogue,1.1,GARC1,RS,isoniazid,inhA@I16V,R,{},"{""solo_R"": 1, ""solo_S"": 0, ""background_R"": 0, ""background_S"": 0, ""p_value"": 1.0}",{}
-7,NC00962.3,isoniazid_FRS1.0_catalogue,1.1,GARC1,RS,isoniazid,katG@S315T,R,{},"{""solo_R"": 91, ""solo_S"": 0, ""background_R"": 0, ""background_S"": 0, ""p_value"": 1.0}",{}

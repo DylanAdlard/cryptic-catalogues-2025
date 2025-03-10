@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/training/results/KAN/WHO_catalogue_KAN_FRS0.60_predictions.csv.
-Catalogue coverage of isolates: 0.7932941583131697
-Sensitivity: 0.9550561797752809
-Specificity: 0.799288256227758

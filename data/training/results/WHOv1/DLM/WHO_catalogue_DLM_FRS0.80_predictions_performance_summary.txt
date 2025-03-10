@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/results/DLM/WHO_catalogue_DLM_FRS0.80_predictions.csv.
-Catalogue coverage of isolates: 0.06422018348623854
-Sensitivity: 1.0
-Specificity: 0.0

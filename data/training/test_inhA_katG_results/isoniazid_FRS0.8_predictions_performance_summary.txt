@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/results/isoniazid_FRS0.8_predictions.csv.
-Catalogue coverage of isolates: 0.9681528662420382
-Sensitivity: 1.0
-Specificity: 1.0

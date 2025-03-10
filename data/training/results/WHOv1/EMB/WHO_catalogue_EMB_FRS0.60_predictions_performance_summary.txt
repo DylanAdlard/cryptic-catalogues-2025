@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/results/EMB/WHO_catalogue_EMB_FRS0.60_predictions.csv.
-Catalogue coverage of isolates: 0.7615637977946441
-Sensitivity: 0.9969356486210419
-Specificity: 0.621167576648467

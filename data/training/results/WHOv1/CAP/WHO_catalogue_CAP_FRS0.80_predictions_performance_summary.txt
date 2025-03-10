@@ -1,4 +1,0 @@
-This is a performance summary for /Users/kmalone/macbook_m1_backup/github/cryptic-catalogue/data/training/results/CAP/WHO_catalogue_CAP_FRS0.80_predictions.csv.
-Catalogue coverage of isolates: 0.8453815261044176
-Sensitivity: 0.9421487603305785
-Specificity: 0.9066666666666666
