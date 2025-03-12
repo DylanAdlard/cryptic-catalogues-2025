@@ -501,7 +501,7 @@ def expand_catalogue_pair(cat1, cat2, drugs, model, cat_names):
         
     return expanded_catalogues
 
-def back2back_sens_spec(data, palette):
+def back2back_sens_spec(data, palette, savefig=None):
         fig, (ax1, ax2) = plt.subplots(ncols=2, sharey=True, figsize=(10, 7), gridspec_kw={'width_ratios': [1, 1]})
 
         # Sensitivity Plot (Left Side)
@@ -550,16 +550,16 @@ def back2back_sens_spec(data, palette):
                 drug_data["COVERAGE"],
                 [y_position - 0.3 if cat == "WHOv1" else 
                 y_position - 0.1 if cat == "WHOv2" else 
-                y_position + 0.3 if cat == "catomatic_v1" else 
-                y_position + 0.1 for cat in drug_data["catalogue"]],
+                y_position + 0.1 if cat == "catomatic_v1" else 
+                y_position + 0.3 for cat in drug_data["catalogue"]],
                 s=40, c="black", edgecolors="white", label=None  # Adjust marker size (s) and color (c) as needed
             )
             ax2.scatter(
                 drug_data["COVERAGE"],
                 [y_position - 0.3 if cat == "WHOv1" else 
                 y_position - 0.1 if cat == "WHOv2" else 
-                y_position + 0.3 if cat == "catomatic_v1" else 
-                y_position + 0.1 for cat in drug_data["catalogue"]],
+                y_position + 0.1 if cat == "catomatic_v1" else 
+                y_position + 0.3 for cat in drug_data["catalogue"]],
                 s=40, c="black" ,edgecolors='white', label=None  # Adjust marker size (s) and color (c) as needed
             )
 
@@ -580,6 +580,8 @@ def back2back_sens_spec(data, palette):
         handles, labels, loc="lower center", 
         ncol=4, frameon=False, bbox_to_anchor=(0.5, -0.04)
 )
+        if savefig is not None:
+            plt.savefig(savefig)
         plt.show()
 
 def classify_predictions(row, suffixes=('cat1', 'cat2')):
@@ -669,7 +671,7 @@ def plot_FRS_vs_perf(df):
         plt.show()
 
 
-def plot_grid_counts(df, valid_drugs, prediction_colors):
+def plot_grid_counts(df, valid_drugs, prediction_colors, savefig=None):
     n_cols = 4
     n_rows = int(np.ceil(len(valid_drugs) / n_cols))
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(12, 2.5 * n_rows))
@@ -739,6 +741,8 @@ def plot_grid_counts(df, valid_drugs, prediction_colors):
                 bbox_to_anchor=(0.5, -0.1), ncol=len(all_handles), frameon=False)
 
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to fit legend
+    if savefig is not None:
+        plt.savefig(savefig)
     plt.show()
 
 def extract_value(value, *keys):
@@ -810,7 +814,9 @@ def update_missing_proportions(merged_cats, u_cats, suffixes=('cat1', 'cat2')):
 
 def abs_err_to_rel(values, errors):
     """Convert absolute errors to relative errors, ensuring valid shapes and bounds."""
-    errors = np.atleast_2d(errors).T  # Ensure (2, N) shape
+    errors = [np.ravel(e) for e in errors]  # Ensures everything is 1D
+    # Stack into a 2D array
+    errors = np.array(errors).T   
     if errors.shape[0] != 2:
         errors = errors.reshape(2, -1)
     return np.vstack([
@@ -827,7 +833,7 @@ def load_catomatic_catalogue(drug, background, p, frs, dir):
     return cat[~cat['EVIDENCE'].apply(lambda x: isinstance(x, dict) and 'default_rule' in x)]
 
 
-def plot_cat_comp_proportions(twoD_data, oneD_data, ax_labels={'x':'Catalogue 1', 'y':'Catalogue 2'}, legend='prediction_pair', max_err=1, category_colors={}):
+def plot_cat_comp_proportions(twoD_data, oneD_data, ax_labels={'x':'Catalogue 1', 'y':'Catalogue 2'}, legend='prediction_pair', max_err=1, category_colors={}, figpath=None):
 
     if len(category_colors)==0:
         # Assign colors
@@ -959,7 +965,8 @@ def plot_cat_comp_proportions(twoD_data, oneD_data, ax_labels={'x':'Catalogue 1'
         ax.fill_between([0, 1.05], -buffer * 3.2, 0, color='gray', alpha=0.18)
 
         ax.text(-buffer * 3.5 / 2, -buffer * 3.2 / 2, "None", ha='center', va='center', fontsize=6, color='black')
-
+        if figpath is not None:
+            plt.savefig(f'{figpath}{drug}_cat_comp.pdf')
         plt.show()
 
 
@@ -1007,12 +1014,12 @@ def plot_perf_heatmaps(performance_df):
             ax.yaxis.set_major_formatter(ticker.FuncFormatter(
                 lambda y, _: f"{subset_df.index[int(y)]:.2f}" if int(y) < len(subset_df.index) else ""
             ))
-        
+        plt.savefig(f'figs/frs/{drug}.pdf')
         plt.tight_layout()
         plt.show()
 
 # Function to plot error bars with jittered x-values
-def plot_mutation_error_bars(frs_prop_data, color_map={}, min_err= 1, label_cutoff=15):
+def plot_mutation_error_bars(frs_prop_data, color_map={}, min_err= 1, label_cutoff=15, figpath=None):
     np.random.seed(0)
 
     for drug, mutations_dict in frs_prop_data.items():
@@ -1037,7 +1044,6 @@ def plot_mutation_error_bars(frs_prop_data, color_map={}, min_err= 1, label_cuto
             jitter = mutation_jitter[mutation]  # Use the fixed jitter value per mutation
             background = data['background']
             y_errors = abs_err_to_rel(y_values, y_errors)
-
             filt = np.abs(np.array(y_errors[0]) - np.array(y_errors[1])) <= min_err
             x_values = x_values[filt]
             y_values = y_values[filt]
@@ -1048,7 +1054,7 @@ def plot_mutation_error_bars(frs_prop_data, color_map={}, min_err= 1, label_cuto
                 plt.errorbar(
                     x=x_values + jitter, y=y_values, 
                     yerr=y_errors, 
-                    fmt='o', capsize=0, linewidth=1.5, markersize=3, alpha=0.65, 
+                    fmt='o', capsize=0, linewidth=1.25, markersize=2.5, alpha=0.65, 
                     label=truncated_labels[mutation], color=mutation_colors[mutation]
                 )
         for i, start in enumerate(np.arange(0.05, 1.0, 0.1)):  # Iterate over x-ranges
@@ -1066,16 +1072,25 @@ def plot_mutation_error_bars(frs_prop_data, color_map={}, min_err= 1, label_cuto
         plt.tight_layout()
         sns.despine()
         plt.grid(False)
+        if figpath is not None:
+            plt.savefig(f'{figpath}{drug}_frs_vs_prop.pdf')
         plt.show()
 
-def plot_frs_vs_mic(df_mic, color_map={}):
+def plot_frs_vs_mic(df_mic, color_map={}, figpath=None):
     y_axis_orders = {
     "INH": ["0.025", "0.05", "0.1", "0.2", "0.4", "0.8", "1.6"],
     "AMI": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
     "EMB": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
     "ETH": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
     "LEV": ["0.12", "0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
-    "MXF": ["0.06", "0.12", "0.25", "0.5", "1.0", "2.0", "4.0"]
+    "MXF": ["0.06", "0.12", "0.25", "0.5", "1.0", "2.0", "4.0"],
+    "RIF": ["0.06", "0.12", "0.25", "0.5", "1.0", "2.0", "4"],
+    "STM": [],
+    "KAN": ["1", "2.0", "4.0", "8.0", "16"],
+    "DLM": ["0.015", "0.03", "0.06", "0.12" "0.25", "0.5"],
+    "CAP": [],
+    "LZD": ["0.06", "0.12", "0.25", "0.5", "1.0", "2"]
+
     }
 
     for drug, v in df_mic.items():    
@@ -1104,9 +1119,11 @@ def plot_frs_vs_mic(df_mic, color_map={}):
         plt.legend(title="Mutation", bbox_to_anchor=(1, 1.2), loc='upper left', frameon=False)  
         plt.tight_layout()
         sns.despine()
+        if figpath is not None:
+            plt.savefig(f'{figpath}{drug}_frs_vs_mic.pdf')
         plt.show()
 
-def plot_pheno_counts(phenotypes, title):
+def plot_pheno_counts(phenotypes, title, savefig):
     # Compute the count for each (DRUG, PHENOTYPE)
     barplot = (
         phenotypes.groupby(['DRUG', 'PHENOTYPE'])['UNIQUEID']
@@ -1150,7 +1167,7 @@ def plot_pheno_counts(phenotypes, title):
     plt.grid(False)
     sns.despine()
     plt.tight_layout()
-
+    plt.savefig(savefig)
     # Show the plot
     plt.show()
 
