@@ -103,13 +103,11 @@ def cap_mic_to_float(df, mic_column="METHOD_MIC", plate_column="METHOD_3"):
     return df[mic_column].apply(adjust_mic)
 
 
-
-
-
 def filter_multiple_phenos(group):
     """
     If a sample contains more than one phenotype,
-    keep the resistant phenotype (preferably with MIC) if there is one.
+    keep the highest priority phenotype in order: R > S > U.
+    Prefer rows with MIC values if available.
 
     Parameters:
     group (pd.DataFrame): A dataframe containing sample data with phenotypes.
@@ -119,15 +117,21 @@ def filter_multiple_phenos(group):
     """
     if len(group) == 1:
         return group
-
-    # Prioritize rows with 'R' phenotype
-    prioritized_group = (
-        group[group['PHENOTYPE'] == "R"] if "R" in group['PHENOTYPE'].values else group
-    )
-
+    
+    # Define phenotype priority order
+    priority_order = {"R": 1, "S": 2, "U": 3}
+    
+    # Sort by phenotype priority (lower is better)
+    group = group.sort_values(by='PHENOTYPE', key=lambda x: x.map(priority_order))
+    
+    # Keep only rows of the highest priority phenotype
+    highest_priority = group.iloc[0]['PHENOTYPE']
+    filtered_group = group[group['PHENOTYPE'] == highest_priority]
+    
     # Check for rows with METHOD_MIC values
-    with_mic = prioritized_group.dropna(subset=['METHOD_MIC'])
-    return with_mic.iloc[0:1] if not with_mic.empty else prioritized_group.iloc[0:1]
+    with_mic = filtered_group.dropna(subset=['METHOD_MIC'])
+    
+    return with_mic.iloc[0:1] if not with_mic.empty else filtered_group.iloc[0:1]
 
 #drop duplicate  entries
 def filter_multiple_phenos_all_drugs(group):
@@ -190,7 +194,8 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Prin
                 except ValueError:
                     predict = "U"
             if isinstance(predict, dict):
-                mut_predictions.append(predict[drug])
+                if drug in predict.keys():
+                    mut_predictions.append(predict[drug])
             else:
                 mut_predictions.append(predict)
 
@@ -1061,7 +1066,7 @@ def plot_mutation_error_bars(frs_prop_data, color_map={}, min_err= 1, label_cuto
             if i % 2 == 0:  # Shade every other section
                 plt.axvspan(start, start + 0.1, color='lightgrey', alpha=0.3)
         plt.axhline(background, linewidth=1)
-        plt.xlabel("FRS (Binned, with Jitter)")
+        plt.xlabel("min FRS (Binned, with Jitter)")
         plt.ylabel("Proportion R")
         plt.title(f"Proportion vs FRS - {drug}", fontsize=7)
         plt.xticks(np.arange(0.1, 1.05, 0.1))  # Minor ticks at every 0.05
@@ -1076,47 +1081,72 @@ def plot_mutation_error_bars(frs_prop_data, color_map={}, min_err= 1, label_cuto
             plt.savefig(f'{figpath}{drug}_frs_vs_prop.pdf')
         plt.show()
 
-def plot_frs_vs_mic(df_mic, color_map={}, figpath=None):
-    y_axis_orders = {
-    "INH": ["0.025", "0.05", "0.1", "0.2", "0.4", "0.8", "1.6"],
-    "AMI": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
-    "EMB": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
-    "ETH": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
-    "LEV": ["0.12", "0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
-    "MXF": ["0.06", "0.12", "0.25", "0.5", "1.0", "2.0", "4.0"],
-    "RIF": ["0.06", "0.12", "0.25", "0.5", "1.0", "2.0", "4"],
-    "STM": [],
-    "KAN": ["1", "2.0", "4.0", "8.0", "16"],
-    "DLM": ["0.015", "0.03", "0.06", "0.12" "0.25", "0.5"],
-    "CAP": [],
-    "LZD": ["0.06", "0.12", "0.25", "0.5", "1.0", "2"]
 
+
+def plot_frs_vs_mic(df_mic, color_map={}, figpath=None, min_n=0):
+    y_axis_orders = {
+        "INH": ["0.025", "0.05", "0.1", "0.2", "0.4", "0.8", "1.6"],
+        "AMI": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
+        "EMB": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
+        "ETH": ["0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
+        "LEV": ["0.12", "0.25", "0.5", "1.0", "2.0", "4.0", "8.0"],
+        "MXF": ["0.06", "0.12", "0.25", "0.5", "1.0", "2.0", "4.0"],
+        "RIF": ["0.06", "0.12", "0.25", "0.5", "1.0", "2.0", "4"],
+        "STM": [],
+        "KAN": ["1", "2.0", "4.0", "8.0", "16"],
+        "DLM": ["0.015", "0.03", "0.06", "0.12", "0.25", "0.5"],
+        "CAP": [],
+        "LZD": ["0.06", "0.12", "0.25", "0.5", "1.0", "2"]
     }
 
     for drug, v in df_mic.items():    
-        fig, axes = plt.subplots(figsize=(3.5, 1.5))
-        y_axis_order = y_axis_orders[drug]
-        
-        # Generate a custom color palette from color_map if available, else use "muted"
+        fig, axes = plt.subplots(figsize=(4, 2))
+        y_axis_order = y_axis_orders.get(drug, [])
+
+        # Count occurrences of each mutation
+        mutation_counts = v["MUTATION"].value_counts()
+        total_unique_mutations = len(mutation_counts)
+
+        # If more than 20 mutations exist, filter out those with ≤3 occurrences - makes plot too messy
+        filter_applied = False
+        if total_unique_mutations > 20:
+            filtered_mutations = mutation_counts[mutation_counts > min_n].index
+            v = v[v["MUTATION"].isin(filtered_mutations)]
+            filter_applied = True  # Indicate that filtering was done
+
+        # Generate a custom color palette from color_map if available
         if drug in color_map and color_map[drug]:  
             unique_mutations = v["MUTATION"].unique()
             custom_palette = {mutation: color_map[drug][mutation] for mutation in unique_mutations if mutation in color_map[drug]}
         else:
-            custom_palette = "muted"  # Default to seaborn's muted palette if no colors are provided
+            custom_palette = "muted"  # Default seaborn palette if no custom colors
 
+        # Plot
         sns.stripplot(
             x="FRS", y="MIC", data=v, ax=axes, jitter=0.2, order=y_axis_order, size=3, 
-            hue="MUTATION", palette=custom_palette  # Use predefined color mapping or "muted"
+            hue="MUTATION", palette=custom_palette
         )
+
+        # Set the title, adding (n > 3) if filtering was applied
+        if min_n > 0:
+            title = f"{drug} (n > {min_n})" if filter_applied else drug
+        else:
+            title = drug
+        axes.set_title(title)
         
-        axes.set_title(drug)
         axes.invert_yaxis()
         axes.set_ylabel("MIC (mg/L)")
         axes.set_xlabel("")
         axes.tick_params(axis="both")
         axes.set_xlim(0, 1.02)
-        
-        plt.legend(title="Mutation", bbox_to_anchor=(1, 1.2), loc='upper left', frameon=False)  
+
+        # Modify legend labels to truncate long names
+        legend = plt.legend(title="Mutation", bbox_to_anchor=(1, 1.2), loc='upper left', frameon=False, fontsize=5.5)
+        for text in legend.get_texts():
+            label = text.get_text()
+            if len(label) > 20:  # Truncate if longer than 20 characters
+                text.set_text(label[:17] + "...")  # Keep first 17 chars + "..."
+
         plt.tight_layout()
         sns.despine()
         if figpath is not None:
