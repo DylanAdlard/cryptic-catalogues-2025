@@ -1,0 +1,50 @@
+{
+  "embA@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "embA@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embA@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embA@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embA@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embA@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embB@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "embB@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embB@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embB@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embB@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "embB@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  }
+}

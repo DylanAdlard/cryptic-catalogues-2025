@@ -1,0 +1,7 @@
+{
+  "gyrA@*?": { "pred": "U", "evid": { "default_rule": "True" } },
+  "gyrA@-*?": { "pred": "U", "evid": { "default_rule": "True" } },
+  "gyrA@*_indel": { "pred": "U", "evid": { "default_rule": "True" } },
+  "gyrA@-*_indel": { "pred": "U", "evid": { "default_rule": "True" } },
+  "gyrA@*=": { "pred": "S", "evid": { "default_rule": "True" } }
+}

@@ -1,0 +1,8 @@
+{
+  "rplC@*?": { "pred": "U", "evid": { "default_rule": "True" } },
+  "rplC@-*?": { "pred": "U", "evid": { "default_rule": "True" } },
+  "rplC@*_indel": { "pred": "U", "evid": { "default_rule": "True" } },
+  "rplC@-*_indel": { "pred": "U", "evid": { "default_rule": "True" } },
+  "rplC@*=": { "pred": "S", "evid": { "default_rule": "True" } },
+  "rplC@del_0.0": { "pred": "U", "evid": { "default_rule": "True" } }
+}

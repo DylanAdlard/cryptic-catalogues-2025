@@ -1,0 +1,8 @@
+{
+  "ddn@*?": { "pred": "U", "evid": { "default_rule": "True" } },
+  "ddn@-*?": { "pred": "U", "evid": { "default_rule": "True" } },
+  "ddn@*_indel": { "pred": "U", "evid": { "default_rule": "True" } },
+  "ddn@-*_indel": { "pred": "U", "evid": { "default_rule": "True" } },
+  "ddn@*=": { "pred": "S", "evid": { "default_rule": "True" } },
+  "ddn@del_0.0": { "pred": "U", "evid": { "default_rule": "True" } }
+}

@@ -1,0 +1,50 @@
+{
+  "gyrA@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrA@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrA@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrA@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrA@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrA@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrB@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrB@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrB@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrB@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrB@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "gyrB@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "Rv0678@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "Rv0678@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "Rv0678@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "Rv0678@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "Rv0678@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "Rv0678@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "pepQ@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "pepQ@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "pepQ@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "pepQ@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "pepQ@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "pepQ@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpS5@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpS5@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpS5@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpS5@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpS5@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpS5@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpL5@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpL5@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpL5@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpL5@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpL5@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "mmpL5@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "atpE@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "atpE@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "atpE@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "atpE@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "atpE@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "atpE@RFill": {
+    "pred": "R",
+    "evid": { "default_rule": "True" }
+  },
+  "atpE@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  }
+}

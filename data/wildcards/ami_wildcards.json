@@ -1,0 +1,50 @@
+{
+  "rrs@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "eis@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "eis@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "eis@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "eis@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "eis@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "eis@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  }
+}

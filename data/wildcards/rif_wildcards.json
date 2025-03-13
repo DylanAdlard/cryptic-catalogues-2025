@@ -1,0 +1,26 @@
+{
+  "rpoB@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "rpoB@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rpoB@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rpoB@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rpoB@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rpoB@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  }
+}

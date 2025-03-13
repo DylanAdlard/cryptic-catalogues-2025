@@ -5,4 +5,6 @@
 /data/training/results/before_catomatic
 /data/CRyPTIC_reuse_table_20231208.csv
 /catomatic
-/data
+/data/*
+!/data/wildcards/
+!/data/mutations-v3.1.0

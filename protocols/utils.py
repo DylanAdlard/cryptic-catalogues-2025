@@ -583,7 +583,7 @@ def back2back_sens_spec(data, palette, savefig=None):
         labels.append('coverage')
         fig.legend(
         handles, labels, loc="lower center", 
-        ncol=4, frameon=False, bbox_to_anchor=(0.5, -0.04)
+        ncol=5, frameon=False, bbox_to_anchor=(0.5, -0.04)
 )
         if savefig is not None:
             plt.savefig(savefig)
@@ -1109,7 +1109,7 @@ def plot_frs_vs_mic(df_mic, color_map={}, figpath=None, min_n=0):
 
         # If more than 20 mutations exist, filter out those with ≤3 occurrences - makes plot too messy
         filter_applied = False
-        if total_unique_mutations > 20:
+        if total_unique_mutations > 10:
             filtered_mutations = mutation_counts[mutation_counts > min_n].index
             v = v[v["MUTATION"].isin(filtered_mutations)]
             filter_applied = True  # Indicate that filtering was done

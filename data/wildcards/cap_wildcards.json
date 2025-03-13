@@ -1,0 +1,50 @@
+{
+  "rrs@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "rrs@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "tlyA@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "tlyA@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "tlyA@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "tlyA@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "tlyA@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "tlyA@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  }
+}

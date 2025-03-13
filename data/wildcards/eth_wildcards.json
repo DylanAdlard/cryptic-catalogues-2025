@@ -1,0 +1,55 @@
+{
+  "inhA@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "inhA@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "inhA@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "inhA@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "inhA@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "inhA@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "ethA@*=": {
+    "pred": "S",
+    "evid": { "default_rule": "True" }
+  },
+  "ethA@-*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "ethA@*_indel": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "ethA@-*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "ethA@*?": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "ethA@del_0.0": {
+    "pred": "U",
+    "evid": { "default_rule": "True" }
+  },
+  "fabG1@*?": { "pred": "U", "evid": { "default_rule": "True" } },
+  "fabG1@-*?": { "pred": "U", "evid": { "default_rule": "True" } },
+  "fabG1@*_indel": { "pred": "U", "evid": { "default_rule": "True" } },
+  "fabG1@-*_indel": { "pred": "U", "evid": { "default_rule": "True" } },
+  "fabG1@*=": { "pred": "S", "evid": { "default_rule": "True" } }
+}
