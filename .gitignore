@@ -8,3 +8,5 @@
 /data/*
 !/data/wildcards/
 !/data/mutations-v3.1.0
+*pyc
+*~
