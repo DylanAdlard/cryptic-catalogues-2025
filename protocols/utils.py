@@ -752,6 +752,14 @@ def flatten_grid_results(grid):
                 "SENSITIVITY": metrics.get("sens"),
                 "SPECIFICITY": metrics.get("spec"),
                 "COVERAGE": metrics.get("cov"),
+                "SENSITIVITY2": metrics.get("sens2"),
+                "SPECIFICITY2": metrics.get("spec2"),
+                "TP": metrics.get("TP"),
+                "FP": metrics.get("FP"),
+                "TN": metrics.get("TN"),
+                "FN": metrics.get("FN"),
+                "UP": metrics.get("UP"),
+                "UN": metrics.get("UN"),
             }
             for (drug, background_rate, p_value), metrics in grid.items()
         ]
